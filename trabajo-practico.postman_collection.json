@@ -1,0 +1,378 @@
+{
+  "info": {
+    "_postman_id": "ef22fca2-aecc-48f3-81c4-d43a9c760a9f",
+    "name": "trabajo-practico",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54885721",
+    "_collection_link": "https://go.postman.co/collection/54885721-ef22fca2-aecc-48f3-81c4-d43a9c760a9f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Listar Canciones",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/canciones",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "canciones"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Listar Canciones",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/canciones",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "canciones"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Fri, 15 May 2026 22:12:06 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": \"cancion-1\",\n        \"titulo\": \"Bohemian Rhapsody\",\n        \"artista\": {\n            \"id\": \"artista-1\",\n            \"nombre\": \"Queen\",\n            \"nacionalidad\": \"Reino Unido\"\n        },\n        \"album\": {\n            \"id\": \"album-1\",\n            \"titulo\": \"A Night at the Opera\",\n            \"anioLanzamiento\": 1975,\n            \"artista\": {\n                \"id\": \"artista-1\",\n                \"nombre\": \"Queen\",\n                \"nacionalidad\": \"Reino Unido\"\n            },\n            \"productora\": {\n                \"id\": \"productora-1\",\n                \"nombre\": \"EMI\"\n            }\n        },\n        \"productora\": {\n            \"id\": \"productora-1\",\n            \"nombre\": \"EMI\"\n        },\n        \"genero\": \"ROCK\",\n        \"duracionSegundos\": 354,\n        \"rating\": 5,\n        \"fechaLanzamiento\": \"1975-10-31\",\n        \"Reproducciones\": 4000\n    },\n    {\n        \"id\": \"cancion-2\",\n        \"titulo\": \"Back in Black\",\n        \"artista\": {\n            \"id\": \"artista-2\",\n            \"nombre\": \"AC/DC\",\n            \"nacionalidad\": \"Australia\"\n        },\n        \"album\": {\n            \"id\": \"album-2\",\n            \"titulo\": \"Back in Black\",\n            \"anioLanzamiento\": 1980,\n            \"artista\": {\n                \"id\": \"artista-2\",\n                \"nombre\": \"AC/DC\",\n                \"nacionalidad\": \"Australia\"\n            },\n            \"productora\": {\n                \"id\": \"productora-2\",\n                \"nombre\": \"Atlantic Records\"\n            }\n        },\n        \"productora\": {\n            \"id\": \"productora-2\",\n            \"nombre\": \"Atlantic Records\"\n        },\n        \"genero\": \"ROCK\",\n        \"duracionSegundos\": 255,\n        \"rating\": 4.8,\n        \"fechaLanzamiento\": \"1980-07-25\",\n        \"Reproducciones\": 2700\n    },\n    {\n        \"id\": \"cancion-3\",\n        \"titulo\": \"Thriller\",\n        \"artista\": {\n            \"id\": \"artista-3\",\n            \"nombre\": \"Michael Jackson\",\n            \"nacionalidad\": \"Estados Unidos\"\n        },\n        \"album\": {\n            \"id\": \"album-3\",\n            \"titulo\": \"Thriller\",\n            \"anioLanzamiento\": 1982,\n            \"artista\": {\n                \"id\": \"artista-3\",\n                \"nombre\": \"Michael Jackson\",\n                \"nacionalidad\": \"Estados Unidos\"\n            },\n            \"productora\": {\n                \"id\": \"productora-3\",\n                \"nombre\": \"Epic Records\"\n            }\n        },\n        \"productora\": {\n            \"id\": \"productora-3\",\n            \"nombre\": \"Epic Records\"\n        },\n        \"genero\": \"POP\",\n        \"duracionSegundos\": 357,\n        \"rating\": 4.9,\n        \"fechaLanzamiento\": \"1982-11-30\",\n        \"Reproducciones\": 5444\n    },\n    {\n        \"id\": \"cancion-4\",\n        \"titulo\": \"Shape of You\",\n        \"artista\": {\n            \"id\": \"artista-4\",\n            \"nombre\": \"Ed Sheeran\",\n            \"nacionalidad\": \"Reino Unido\"\n        },\n        \"album\": {\n            \"id\": \"album-4\",\n            \"titulo\": \"Divide\",\n            \"anioLanzamiento\": 2017,\n            \"artista\": {\n                \"id\": \"artista-4\",\n                \"nombre\": \"Ed Sheeran\",\n                \"nacionalidad\": \"Reino Unido\"\n            },\n            \"productora\": {\n                \"id\": \"productora-4\",\n                \"nombre\": \"Asylum Records\"\n            }\n        },\n        \"productora\": {\n            \"id\": \"productora-4\",\n            \"nombre\": \"Asylum Records\"\n        },\n        \"genero\": \"POP\",\n        \"duracionSegundos\": 233,\n        \"rating\": 4.5,\n        \"fechaLanzamiento\": \"2017-01-06\",\n        \"Reproducciones\": 3222\n    },\n    {\n        \"id\": \"cancion-5\",\n        \"titulo\": \"So What\",\n        \"artista\": {\n            \"id\": \"artista-5\",\n            \"nombre\": \"Miles Davis\",\n            \"nacionalidad\": \"Estados Unidos\"\n        },\n        \"album\": {\n            \"id\": \"album-5\",\n            \"titulo\": \"Kind of Blue\",\n            \"anioLanzamiento\": 1959,\n            \"artista\": {\n                \"id\": \"artista-5\",\n                \"nombre\": \"Miles Davis\",\n                \"nacionalidad\": \"Estados Unidos\"\n            },\n            \"productora\": {\n                \"id\": \"productora-5\",\n                \"nombre\": \"Columbia Records\"\n            }\n        },\n        \"productora\": {\n            \"id\": \"productora-5\",\n            \"nombre\": \"Columbia Records\"\n        },\n        \"genero\": \"JAZZ\",\n        \"duracionSegundos\": 562,\n        \"rating\": 4.7,\n        \"fechaLanzamiento\": \"1959-08-17\",\n        \"Reproducciones\": 7666\n    },\n    {\n        \"id\": \"cancion-6\",\n        \"titulo\": \"Take Five\",\n        \"artista\": {\n            \"id\": \"artista-6\",\n            \"nombre\": \"The Dave Brubeck Quartet\",\n            \"nacionalidad\": \"Estados Unidos\"\n        },\n        \"album\": {\n            \"id\": \"album-6\",\n            \"titulo\": \"Time Out\",\n            \"anioLanzamiento\": 1959,\n            \"artista\": {\n                \"id\": \"artista-6\",\n                \"nombre\": \"The Dave Brubeck Quartet\",\n                \"nacionalidad\": \"Estados Unidos\"\n            },\n            \"productora\": {\n                \"id\": \"productora-6\",\n                \"nombre\": \"Virgin Records\"\n            }\n        },\n        \"productora\": {\n            \"id\": \"productora-5\",\n            \"nombre\": \"Columbia Records\"\n        },\n        \"genero\": \"JAZZ\",\n        \"duracionSegundos\": 324,\n        \"rating\": 4.6,\n        \"fechaLanzamiento\": \"1959-09-21\",\n        \"Reproducciones\": 1222\n    },\n    {\n        \"id\": \"cancion-7\",\n        \"titulo\": \"One More Time\",\n        \"artista\": {\n            \"id\": \"artista-7\",\n            \"nombre\": \"Daft Punk\",\n            \"nacionalidad\": \"Francia\"\n        },\n        \"album\": {\n            \"id\": \"album-7\",\n            \"titulo\": \"Discovery\",\n            \"anioLanzamiento\": 2001,\n            \"artista\": {\n                \"id\": \"artista-7\",\n                \"nombre\": \"Daft Punk\",\n                \"nacionalidad\": \"Francia\"\n            },\n            \"productora\": {\n                \"id\": \"productora-7\",\n                \"nombre\": \"Universal Music\"\n            }\n        },\n        \"productora\": {\n            \"id\": \"productora-6\",\n            \"nombre\": \"Virgin Records\"\n        },\n        \"genero\": \"ELECTRONICA\",\n        \"duracionSegundos\": 320,\n        \"rating\": 4.8,\n        \"fechaLanzamiento\": \"2000-11-13\",\n        \"Reproducciones\": 4555\n    },\n    {\n        \"id\": \"cancion-8\",\n        \"titulo\": \"Levels\",\n        \"artista\": {\n            \"id\": \"artista-8\",\n            \"nombre\": \"Avicii\",\n            \"nacionalidad\": \"Suecia\"\n        },\n        \"album\": {\n            \"id\": \"album-8\",\n            \"titulo\": \"Levels\",\n            \"anioLanzamiento\": 2011,\n            \"artista\": {\n                \"id\": \"artista-8\",\n                \"nombre\": \"Avicii\",\n                \"nacionalidad\": \"Suecia\"\n            },\n            \"productora\": {\n                \"id\": \"productora-7\",\n                \"nombre\": \"Universal Music\"\n            }\n        },\n        \"productora\": {\n            \"id\": \"productora-7\",\n            \"nombre\": \"Universal Music\"\n        },\n        \"genero\": \"ELECTRONICA\",\n        \"duracionSegundos\": 199,\n        \"rating\": 4.7,\n        \"fechaLanzamiento\": \"2011-10-28\",\n        \"Reproducciones\": 8777\n    },\n    {\n        \"id\": \"cancion-9\",\n        \"titulo\": \"Sinfonia No. 5\",\n        \"artista\": {\n            \"id\": \"artista-9\",\n            \"nombre\": \"Ludwig van Beethoven\",\n            \"nacionalidad\": \"Alemania\"\n        },\n        \"album\": {\n            \"id\": \"album-9\",\n            \"titulo\": \"Obras Clasicas\",\n            \"anioLanzamiento\": 1808,\n            \"artista\": {\n                \"id\": \"artista-9\",\n                \"nombre\": \"Ludwig van Beethoven\",\n                \"nacionalidad\": \"Alemania\"\n            },\n            \"productora\": {\n                \"id\": \"productora-8\",\n                \"nombre\": \"Musica Clasica Internacional\"\n            }\n        },\n        \"productora\": {\n            \"id\": \"productora-8\",\n            \"nombre\": \"Musica Clasica Internacional\"\n        },\n        \"genero\": \"CLASICA\",\n        \"duracionSegundos\": 420,\n        \"rating\": 5,\n        \"fechaLanzamiento\": \"1808-12-22\",\n        \"Reproducciones\": 5444\n    },\n    {\n        \"id\": \"cancion-10\",\n        \"titulo\": \"Claro de Luna\",\n        \"artista\": {\n            \"id\": \"artista-9\",\n            \"nombre\": \"Ludwig van Beethoven\",\n            \"nacionalidad\": \"Alemania\"\n        },\n        \"album\": {\n            \"id\": \"album-9\",\n            \"titulo\": \"Obras Clasicas\",\n            \"anioLanzamiento\": 1808,\n            \"artista\": {\n                \"id\": \"artista-9\",\n                \"nombre\": \"Ludwig van Beethoven\",\n                \"nacionalidad\": \"Alemania\"\n            },\n            \"productora\": {\n                \"id\": \"productora-8\",\n                \"nombre\": \"Musica Clasica Internacional\"\n            }\n        },\n        \"productora\": {\n            \"id\": \"productora-8\",\n            \"nombre\": \"Musica Clasica Internacional\"\n        },\n        \"genero\": \"CLASICA\",\n        \"duracionSegundos\": 300,\n        \"rating\": 4.9,\n        \"fechaLanzamiento\": \"1801-01-01\",\n        \"Reproducciones\": 3444\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Buscar canción por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/canciones/cancion-16",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "canciones",
+            "cancion-16"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Buscar canción por ID",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/canciones/cancion-16",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "canciones",
+                "cancion-16"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Fri, 15 May 2026 22:12:52 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": \"cancion-16\",\n    \"titulo\": \"Crying Lightning\",\n    \"artista\": {\n        \"id\": \"artista-10\",\n        \"nombre\": \"Arctic Monkeys\",\n        \"nacionalidad\": \"Reino Unido\"\n    },\n    \"album\": {\n        \"id\": \"album-11\",\n        \"titulo\": \"Humbug\",\n        \"anioLanzamiento\": 2009,\n        \"artista\": {\n            \"id\": \"artista-10\",\n            \"nombre\": \"Arctic Monkeys\",\n            \"nacionalidad\": \"Reino Unido\"\n        },\n        \"productora\": {\n            \"id\": \"productora-10\",\n            \"nombre\": \"Desert Sound Studio\"\n        }\n    },\n    \"productora\": {\n        \"id\": \"productora-10\",\n        \"nombre\": \"Desert Sound Studio\"\n    },\n    \"genero\": \"ROCK\",\n    \"duracionSegundos\": 224,\n    \"rating\": 4.8,\n    \"fechaLanzamiento\": \"2009-07-06\",\n    \"Reproducciones\": 14330\n}"
+        }
+      ]
+    },
+    {
+      "name": "Buscar por título y artista",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/canciones/buscar?titulo=bohemian&artista=queen",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "canciones",
+            "buscar"
+          ],
+          "query": [
+            {
+              "key": "titulo",
+              "value": "bohemian"
+            },
+            {
+              "key": "artista",
+              "value": "queen"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Buscar por título y artista",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/canciones/buscar?titulo=bohemian&artista=queen",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "canciones",
+                "buscar"
+              ],
+              "query": [
+                {
+                  "key": "titulo",
+                  "value": "bohemian"
+                },
+                {
+                  "key": "artista",
+                  "value": "queen"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Fri, 15 May 2026 22:13:02 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": \"cancion-1\",\n        \"titulo\": \"Bohemian Rhapsody\",\n        \"artista\": {\n            \"id\": \"artista-1\",\n            \"nombre\": \"Queen\",\n            \"nacionalidad\": \"Reino Unido\"\n        },\n        \"album\": {\n            \"id\": \"album-1\",\n            \"titulo\": \"A Night at the Opera\",\n            \"anioLanzamiento\": 1975,\n            \"artista\": {\n                \"id\": \"artista-1\",\n                \"nombre\": \"Queen\",\n                \"nacionalidad\": \"Reino Unido\"\n            },\n            \"productora\": {\n                \"id\": \"productora-1\",\n                \"nombre\": \"EMI\"\n            }\n        },\n        \"productora\": {\n            \"id\": \"productora-1\",\n            \"nombre\": \"EMI\"\n        },\n        \"genero\": \"ROCK\",\n        \"duracionSegundos\": 354,\n        \"rating\": 5,\n        \"fechaLanzamiento\": \"1975-10-31\",\n        \"Reproducciones\": 4000\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Reproducir canción",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/canciones/cancion-1/reproducir",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "canciones",
+            "cancion-1",
+            "reproducir"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Reproducir canción",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/canciones/cancion-1/reproducir",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "canciones",
+                "cancion-1",
+                "reproducir"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Fri, 15 May 2026 22:13:24 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": \"cancion-1\",\n    \"titulo\": \"Bohemian Rhapsody\",\n    \"artista\": {\n        \"id\": \"artista-1\",\n        \"nombre\": \"Queen\",\n        \"nacionalidad\": \"Reino Unido\"\n    },\n    \"album\": {\n        \"id\": \"album-1\",\n        \"titulo\": \"A Night at the Opera\",\n        \"anioLanzamiento\": 1975,\n        \"artista\": {\n            \"id\": \"artista-1\",\n            \"nombre\": \"Queen\",\n            \"nacionalidad\": \"Reino Unido\"\n        },\n        \"productora\": {\n            \"id\": \"productora-1\",\n            \"nombre\": \"EMI\"\n        }\n    },\n    \"productora\": {\n        \"id\": \"productora-1\",\n        \"nombre\": \"EMI\"\n    },\n    \"genero\": \"ROCK\",\n    \"duracionSegundos\": 354,\n    \"rating\": 5,\n    \"fechaLanzamiento\": \"1975-10-31\",\n    \"Reproducciones\": 4001\n}"
+        }
+      ]
+    },
+    {
+      "name": "Recomendación por popularidad",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/canciones/recomendaciones/popularidad",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "canciones",
+            "recomendaciones",
+            "popularidad"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Recomendación por popularidad",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/canciones/recomendaciones/popularidad",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "canciones",
+                "recomendaciones",
+                "popularidad"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Fri, 15 May 2026 22:18:38 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": \"cancion-16\",\n        \"titulo\": \"Crying Lightning\",\n        \"artista\": {\n            \"id\": \"artista-10\",\n            \"nombre\": \"Arctic Monkeys\",\n            \"nacionalidad\": \"Reino Unido\"\n        },\n        \"album\": {\n            \"id\": \"album-11\",\n            \"titulo\": \"Humbug\",\n            \"anioLanzamiento\": 2009,\n            \"artista\": {\n                \"id\": \"artista-10\",\n                \"nombre\": \"Arctic Monkeys\",\n                \"nacionalidad\": \"Reino Unido\"\n            },\n            \"productora\": {\n                \"id\": \"productora-10\",\n                \"nombre\": \"Desert Sound Studio\"\n            }\n        },\n        \"productora\": {\n            \"id\": \"productora-10\",\n            \"nombre\": \"Desert Sound Studio\"\n        },\n        \"genero\": \"ROCK\",\n        \"duracionSegundos\": 224,\n        \"rating\": 4.8,\n        \"fechaLanzamiento\": \"2009-07-06\",\n        \"Reproducciones\": 14330\n    },\n    {\n        \"id\": \"cancion-18\",\n        \"titulo\": \"Secret Door\",\n        \"artista\": {\n            \"id\": \"artista-10\",\n            \"nombre\": \"Arctic Monkeys\",\n            \"nacionalidad\": \"Reino Unido\"\n        },\n        \"album\": {\n            \"id\": \"album-11\",\n            \"titulo\": \"Humbug\",\n            \"anioLanzamiento\": 2009,\n            \"artista\": {\n                \"id\": \"artista-10\",\n                \"nombre\": \"Arctic Monkeys\",\n                \"nacionalidad\": \"Reino Unido\"\n            },\n            \"productora\": {\n                \"id\": \"productora-10\",\n                \"nombre\": \"Desert Sound Studio\"\n            }\n        },\n        \"productora\": {\n            \"id\": \"productora-10\",\n            \"nombre\": \"Desert Sound Studio\"\n        },\n        \"genero\": \"ROCK\",\n        \"duracionSegundos\": 223,\n        \"rating\": 4.5,\n        \"fechaLanzamiento\": \"2009-08-19\",\n        \"Reproducciones\": 13220\n    },\n    {\n        \"id\": \"cancion-20\",\n        \"titulo\": \"Pretty Visitors\",\n        \"artista\": {\n            \"id\": \"artista-10\",\n            \"nombre\": \"Arctic Monkeys\",\n            \"nacionalidad\": \"Reino Unido\"\n        },\n        \"album\": {\n            \"id\": \"album-11\",\n            \"titulo\": \"Humbug\",\n            \"anioLanzamiento\": 2009,\n            \"artista\": {\n                \"id\": \"artista-10\",\n                \"nombre\": \"Arctic Monkeys\",\n                \"nacionalidad\": \"Reino Unido\"\n            },\n            \"productora\": {\n                \"id\": \"productora-10\",\n                \"nombre\": \"Desert Sound Studio\"\n            }\n        },\n        \"productora\": {\n            \"id\": \"productora-10\",\n            \"nombre\": \"Desert Sound Studio\"\n        },\n        \"genero\": \"ROCK\",\n        \"duracionSegundos\": 220,\n        \"rating\": 4.6,\n        \"fechaLanzamiento\": \"2009-08-19\",\n        \"Reproducciones\": 12370\n    },\n    {\n        \"id\": \"cancion-19\",\n        \"titulo\": \"Cornerstone\",\n        \"artista\": {\n            \"id\": \"artista-10\",\n            \"nombre\": \"Arctic Monkeys\",\n            \"nacionalidad\": \"Reino Unido\"\n        },\n        \"album\": {\n            \"id\": \"album-11\",\n            \"titulo\": \"Humbug\",\n            \"anioLanzamiento\": 2009,\n            \"artista\": {\n                \"id\": \"artista-10\",\n                \"nombre\": \"Arctic Monkeys\",\n                \"nacionalidad\": \"Reino Unido\"\n            },\n            \"productora\": {\n                \"id\": \"productora-10\",\n                \"nombre\": \"Desert Sound Studio\"\n            }\n        },\n        \"productora\": {\n            \"id\": \"productora-10\",\n            \"nombre\": \"Desert Sound Studio\"\n        },\n        \"genero\": \"ROCK\",\n        \"duracionSegundos\": 197,\n        \"rating\": 4.7,\n        \"fechaLanzamiento\": \"2009-11-16\",\n        \"Reproducciones\": 12000\n    },\n    {\n        \"id\": \"cancion-15\",\n        \"titulo\": \"Snap Out of It\",\n        \"artista\": {\n            \"id\": \"artista-10\",\n            \"nombre\": \"Arctic Monkeys\",\n            \"nacionalidad\": \"Reino Unido\"\n        },\n        \"album\": {\n            \"id\": \"album-10\",\n            \"titulo\": \"AM\",\n            \"anioLanzamiento\": 2013,\n            \"artista\": {\n                \"id\": \"artista-10\",\n                \"nombre\": \"Arctic Monkeys\",\n                \"nacionalidad\": \"Reino Unido\"\n            },\n            \"productora\": {\n                \"id\": \"productora-9\",\n                \"nombre\": \"Domino Records\"\n            }\n        },\n        \"productora\": {\n            \"id\": \"productora-9\",\n            \"nombre\": \"Domino Records\"\n        },\n        \"genero\": \"ROCK\",\n        \"duracionSegundos\": 193,\n        \"rating\": 4.5,\n        \"fechaLanzamiento\": \"2013-09-09\",\n        \"Reproducciones\": 11130\n    }\n]"
+        }
+      ]
+    }
+  ]
+}
